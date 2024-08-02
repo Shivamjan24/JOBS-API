@@ -26,9 +26,6 @@ app.use(ratelimiter({
 // extra packages
 
 // routes
-app.get("/",(req,res)=>{
-  res.send("JOBS API")
-})
 
 app.use("/api/v1/auth",router1)
 app.use("/api/v1/jobs",auth,router2)
